@@ -4,6 +4,7 @@ import React, {useRef} from "react";
 import {GoogleGeminiEffect} from "@/components/ui/google-gemini-effect";
 import NavBar from "@/components/ui/navbar";
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
+import {LitUpBorderButton} from "@/components/ui/lit-up-border-button";
 
 export default function Home() {
 
@@ -21,20 +22,8 @@ export default function Home() {
 
   return (
     <>
-    <NavBar />
     <main className="flex min-h-screen">
-      {/* <div
-        className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
-        ref={ref}
-      >
-        <GoogleGeminiEffect pathLengths={[
-          pathLengthFirst,
-          pathLengthSecond,
-          pathLengthThird,
-          pathLengthFourth,
-          pathLengthFifth,
-        ]}/>
-      </div> */}
+      <NavBar/>
       <BackgroundGradientAnimation>
         <div className="absolute z-50 inset-0 flex items-center justify-center">
           <div className="flex flex-col md:flex-row text-white px-4 max-w-screen-xl">
@@ -59,5 +48,5 @@ export default function Home() {
       </BackgroundGradientAnimation>
     </main>
     </>
-);
+  );
 }
