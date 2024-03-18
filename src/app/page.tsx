@@ -5,6 +5,8 @@ import {GoogleGeminiEffect} from "@/components/ui/google-gemini-effect";
 import NavBar from "@/components/ui/navbar";
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
 import {LitUpBorderButton} from "@/components/ui/lit-up-border-button";
+import SpeechBubble from "@/components/ui/speech-bubble/speech-bubble";
+import { cn } from "@/utils/cn";
 
 export default function Home() {
 
@@ -26,18 +28,33 @@ export default function Home() {
       <NavBar/>
       <BackgroundGradientAnimation>
         <div className="absolute z-50 inset-0 flex items-center justify-center">
-          <div className="flex flex-col md:flex-row text-white px-4 max-w-screen-xl">
+          <div className="flex flex-col md:flex-row text-white px-4 max-w-screen-xl items-center">
             {/* <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
               Gradients X Animations
             </p> */}
-            <div className="mr-10 flex-1">
-              <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">Lorem ipsum dolar delta</h1>
-              <p className="text-xl md:text-3xl lg:text-5xl">Text sample stuff here</p>
-              <button className="bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1">Request beta access</button>
+            <div className="flex flex-col justify-center md:justify-start md:mr-10 flex-1 ">
+              <h1 className="text-3xl text-center md:text-start md:text-4xl lg:text-6xl font-bold">Lorem ipsum dolar delta</h1>
+              <p className="text-xl md:text-3xl lg:text-5xl text-center md:text-start">Text sample stuff here</p>
+              <button className="bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1 self-center md:self-start">Request beta access</button>
             </div>
-            <div className="flex-1 pointer-events-none">
-              <div>Speech bubble 1</div>
-              <div>Speech bubbble 2 - Lorem ipsum dolar delta</div>
+            <div className="hidden md:flex flex-col flex-1 pointer-events-none ">
+              <SpeechBubble
+                className={
+                  cn("w-9/12", 'animate-hovering')} 
+                text={"Speech bubble 1"}/>
+              <SpeechBubble
+                className={
+                  cn("mt-10 w-9/12 self-end", "animate-hovering")}
+                text={"Speech bubble 2 - Lorem ipsum delta"}
+                isReply/>
+              <SpeechBubble
+                className={
+                  cn("mt-10 w-9/12", "animate-hovering")}
+                text={"Speech bubble 3"}/>
+              <SpeechBubble 
+                className={cn("mt-10 w-9/12 self-end", "animate-hovering")}
+                text={"Speech bubble 4 - Lorem ipsum delta"}
+                isReply/>
             </div>
           </div>
         </div>
