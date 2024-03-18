@@ -36,10 +36,6 @@ export default function Home() {
               <button className="bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1">Request beta access</button>
             </div>
             <div className="flex-1 pointer-events-none">
-              {/* <div >
-                <iframe src="https://giphy.com/embed/7OXm7rFOJ0ARoeXOCV" width="100%" height="100%" className="absolute giphy-embed" frameBorder="0" allowFullScreen></iframe>
-              </div> */}
-              {/* <p><a href="https://giphy.com/gifs/warcraft-video-games-world-of-warcraft-7OXm7rFOJ0ARoeXOCV">via GIPHY</a></p> */}
               <div>Speech bubble 1</div>
               <div>Speech bubbble 2 - Lorem ipsum dolar delta</div>
             </div>
