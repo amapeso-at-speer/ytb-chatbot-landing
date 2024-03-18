@@ -26,6 +26,12 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.button-color {
+    background-color: rgb(25, 35, 77)
+}
+
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

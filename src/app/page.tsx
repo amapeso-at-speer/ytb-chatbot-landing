@@ -4,6 +4,7 @@ import React, {useRef} from "react";
 import {GoogleGeminiEffect} from "@/components/ui/google-gemini-effect";
 import NavBar from "@/components/ui/navbar";
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
+import {LitUpBorderButton} from "@/components/ui/lit-up-border-button";
 
 export default function Home() {
 
@@ -21,31 +22,32 @@ export default function Home() {
 
   return (
     <>
-    <NavBar />
     <main className="flex min-h-screen">
-      {/* <div
-        className="h-[400vh] bg-black w-full dark:border dark:border-white/[0.1] rounded-md relative pt-40 overflow-clip"
-        ref={ref}
-      >
-        <GoogleGeminiEffect pathLengths={[
-          pathLengthFirst,
-          pathLengthSecond,
-          pathLengthThird,
-          pathLengthFourth,
-          pathLengthFifth,
-        ]}/>
-      </div> */}
+      <NavBar/>
       <BackgroundGradientAnimation>
-        <div className="absolute z-50 inset-0 flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
+        <div
+          className="absolute z-50 inset-0 flex-col md:flex-row flex items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl">
           {/* <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
             Gradients X Animations
           </p> */}
-          <h1>Lorem ipsum dolar delta</h1>
+          <h1 className="font-sans">Lorem ipsum dolar delta</h1>
           {/* <p>Text sample stuff here</p>
           <button>Some random button</button> */}
+          <div className=" pb-2 items-center flex flex-col md:hidden pt-20">
+            <LitUpBorderButton>
+              Request beta access
+            </LitUpBorderButton>
+            <button className="p-[3px] md:pr-5 pt-5">
+              <div
+                className="px-4 py-2  bg-transparent rounded-full  relative group transition duration-200 text-white hover:opacity-30 font-sans lg:text-base md:text-sm text-xs"
+              >
+                Sign In
+              </div>
+            </button>
+          </div>
         </div>
       </BackgroundGradientAnimation>
     </main>
     </>
-);
+  );
 }
