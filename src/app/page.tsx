@@ -32,10 +32,11 @@ export default function Home() {
             {/* <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
               Gradients X Animations
             </p> */}
-            <div className="flex flex-col justify-center md:justify-start md:mr-10 flex-1 ">
-              <h1 className="text-3xl text-center md:text-start md:text-4xl lg:text-6xl font-bold">Lorem ipsum dolar delta</h1>
-              <p className="text-xl md:text-3xl lg:text-5xl text-center md:text-start">Text sample stuff here</p>
-              <button className="bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1 self-center md:self-start">Request beta access</button>
+            <div className="mr-10 flex-1">
+              <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">Elaborate</h1>
+              <p className="text-xl md:text-2xl lg:text-3xl">your curiosity</p>
+              <p className="text-xl md:text-3xl lg:text-4xl pt-10 text-zinc-400">dive deep with our AI chat on YouTube videos</p>
+              <button className="bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1">Request beta access</button>
             </div>
             <div className="hidden md:flex flex-col flex-1 pointer-events-none ">
               <SpeechBubble
