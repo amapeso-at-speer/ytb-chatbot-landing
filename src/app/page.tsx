@@ -31,8 +31,9 @@ export default function Home() {
               Gradients X Animations
             </p> */}
             <div className="mr-10 flex-1">
-              <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">Lorem ipsum dolar delta</h1>
-              <p className="text-xl md:text-3xl lg:text-5xl">Text sample stuff here</p>
+              <h1 className="text-3xl md:text-4xl lg:text-7xl font-bold">Elaborate</h1>
+              <p className="text-xl md:text-2xl lg:text-3xl">your curiosity</p>
+              <p className="text-xl md:text-3xl lg:text-4xl pt-10 text-zinc-400">dive deep with our AI chat on YouTube videos</p>
               <button className="bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1">Request beta access</button>
             </div>
             <div className="flex-1 pointer-events-none">
