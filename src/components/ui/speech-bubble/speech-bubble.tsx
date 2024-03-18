@@ -1,5 +1,6 @@
 import React from "react";
 import "./speech-bubble.css";
+import { TextGenerateEffect } from "../text-generate-effect";
 
 export default function SpeechBubble({
   text = "",
@@ -17,7 +18,7 @@ export default function SpeechBubble({
         (isReply ? " speech-reply" : "")}
       style={{animationDelay: `${Math.random()}s`}}
     >
-      <p>{text}</p>
+      <TextGenerateEffect words={text} />
     </div>
   );
 }
