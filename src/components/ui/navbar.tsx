@@ -3,7 +3,7 @@ import {LitUpBorderButton} from "@/components/ui/lit-up-border-button";
 
 export default function NavBar() {
     return (
-        <nav className="flex w-screen p-6 justify-between items-center absolute top-0 left-0 z-[100]">
+        <nav className="flex p-6 justify-between items-center">
             <h1 className="font-sans font-bold text-white text-2xl">
                 Elaborate
             </h1>

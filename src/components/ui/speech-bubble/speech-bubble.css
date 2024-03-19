@@ -59,3 +59,29 @@
   left: 24px;
   bottom: -13px;
 }
+
+.speech-icon-wrapper {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 100%;
+  border: 1px solid #6366f1;
+}
+
+.speech-icon {
+  width: 100%;
+  height: 100%;
+}
+
+.speech-icon-wrapper.robo {
+  background-color: rgb(6, 6, 15);
+  left: -17px;
+  bottom: 5px;
+}
+
+.speech-icon-wrapper.person {
+  background-color: rgb(25, 35, 77);
+  right: -17px;
+  bottom: 5px;
+  color: rgb(145, 145, 233);
+}

@@ -1,0 +1,24 @@
+.cards {
+  position: relative;
+  transform: translateY(-25%);
+}
+
+.card-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 1rem;
+  color: rgb(254, 217, 183);
+}
+
+.footer-heading {
+  color: rgb(254, 217, 183);
+}
+
+.footer-icon {
+  height: 24px;
+  width: 24px;
+}
+
+.footer-icon:first-child {
+  margin-right: 0.75rem;
+}
