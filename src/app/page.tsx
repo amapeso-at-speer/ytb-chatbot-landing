@@ -43,6 +43,7 @@ export default function Home() {
                 <p className="text-center md:text-left text-xl md:text-2xl lg:text-3xl">your curiosity</p>
                 <p className="text-center md:text-left text-xl md:text-3xl lg:text-4xl pt-10 text-zinc-400">dive deep with our AI chat on YouTube videos</p>
                 <button className="self-center md:self-start bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1">Request beta access</button>
+                <button className="md:hidden mt-3 opacity-70 transition duration-300 text-white hover:opacity-100">Sign In</button>
               </div>
               <div className="hidden md:flex flex-col flex-1 mb-20">
                 <SpeechBubble
