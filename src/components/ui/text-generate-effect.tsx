@@ -7,24 +7,28 @@ export const TextGenerateEffect = ({
   words,
   className,
   textClassName,
+  delay,
 }: {
   words: string;
   className?: string;
   textClassName?: string;
+  delay?: number;
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
   useEffect(() => {
-    animate(
-      "span",
-      {
-        opacity: 1,
-      },
-      {
-        duration: 2,
-        delay: stagger(0.2),
-      }
-    );
+    setTimeout(() => {
+      animate(
+        "span",
+        {
+          opacity: 1,
+        },
+        {
+          duration: 2,
+          delay: stagger(0.2),
+        }
+      );
+    }, delay ?? 0);
   }, [scope.current]);
 
   const renderWords = () => {

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./speech-bubble.css";
 import { TextGenerateEffect } from "../text-generate-effect";
 import { RiRobot2Line } from "react-icons/ri";
@@ -8,10 +8,12 @@ export default function SpeechBubble({
   text = "",
   isReply = false,
   className="",
+  delay = 0,
 }: {
   text?: string;
   isReply?: boolean;
   className?: string;
+  delay?: number;
 }) {
   return (
     <div
@@ -23,7 +25,7 @@ export default function SpeechBubble({
       <div className={"absolute speech-icon-wrapper " + (isReply ? "robo" : "person")}>
         {isReply ? <RiRobot2Line className="speech-icon" /> : <IoPersonOutline className="speech-icon" />}
       </div>
-      <TextGenerateEffect words={text} />
+      <TextGenerateEffect delay={delay} words={text} />
     </div>
   );
 }

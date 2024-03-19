@@ -54,15 +54,21 @@ export default function Home() {
                   className={
                     cn("mt-10 w-9/12", "animate-hovering")}
                   text={"Of course! Quantum computing is a field that utilizes the principles of quantum mechanics to perform operations on data."}
-                  isReply/>
+                  isReply
+                  delay={4500}
+                />
                 <SpeechBubble
                   className={
                     cn("mt-10 w-9/12 self-end", "animate-hovering")}
-                  text={"Wow, that sounds mind-blowing! But how exactly does it differ from traditional computing?"}/>
+                  text={"Wow, that sounds mind-blowing! But how exactly does it differ from traditional computing?"}
+                  delay={4500 + 5000}
+                />
                 <SpeechBubble 
                   className={cn("mt-10 w-9/12", "animate-hovering")}
                   text={"In traditional computing, bits can only exist in one state at a time, either 0 or 1. However, qubits can exist in a superposition of both states simultaneously, exponentially increasing the computational power of quantum computers."}
-                  isReply/>
+                  isReply
+                  delay={4500 + 5000 + 3500}
+                />
               </div>
             </div>
           </div>
