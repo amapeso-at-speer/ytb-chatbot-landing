@@ -4,32 +4,6 @@
 }
 
 .speech-wrapper:not(.speech-reply)::before {
-  content:"";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 8px solid #6366f1;
-  border-right: 8px solid transparent;
-  border-top: 8px solid #6366f1;
-  border-bottom: 8px solid transparent;
-  left: 23px;
-  bottom: -16px;
-}
-  
-.speech-wrapper:not(.speech-reply)::after {
-  content: "";
-  width: 0px;
-  height: 0px;
-  position: absolute;
-  border-left: 9px solid rgb(25, 35, 77);
-  border-right: 9px solid transparent;
-  border-top: 9px solid rgb(25, 35, 77);
-  border-bottom: 9px solid transparent;
-  left: 24px;
-  bottom: -13px;
-}
-
-.speech-wrapper.speech-reply::before {
   content: "";
   width: 0px;
   height: 0px;
@@ -41,16 +15,47 @@
   right: 23px;
   bottom: -16px;
 }
+  
+.speech-wrapper:not(.speech-reply)::after {
+  content: "";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 9px solid transparent;
+  border-right: 9px solid rgb(6, 6, 15);
+  border-top: 9px solid rgb(6, 6, 15);
+  border-bottom: 9px solid transparent;
+  right: 24px;
+  bottom: -13px;
+}
+
+.speech-wrapper.speech-reply {
+  background-color: rgb(25, 35, 77);
+  outline-color: #6366f1;
+}
+
+.speech-wrapper.speech-reply::before {
+  content:"";
+  width: 0px;
+  height: 0px;
+  position: absolute;
+  border-left: 8px solid #6366f1;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #6366f1;
+  border-bottom: 8px solid transparent;
+  left: 23px;
+  bottom: -16px;
+}
 
 .speech-wrapper.speech-reply::after {
   content: "";
   width: 0px;
   height: 0px;
   position: absolute;
-  border-left: 9px solid transparent;
-  border-right: 9px solid rgb(25, 35, 77);
+  border-left: 9px solid rgb(25, 35, 77);
+  border-right: 9px solid transparent;
   border-top: 9px solid rgb(25, 35, 77);
   border-bottom: 9px solid transparent;
-  right: 24px;
+  left: 24px;
   bottom: -13px;
 }

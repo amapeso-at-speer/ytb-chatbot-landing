@@ -14,7 +14,7 @@ export default function SpeechBubble({
   return (
     <div
       className={(className + " " ?? "") +
-        "speech-wrapper bg-blue p-5 rounded-lg outline outline-1" +
+        "speech-wrapper bg-dark-blue p-5 rounded-lg outline outline-1" +
         (isReply ? " speech-reply" : "")}
       style={{animationDelay: `${Math.random()}s`}}
     >

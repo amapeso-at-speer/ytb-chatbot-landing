@@ -41,20 +41,20 @@ export default function Home() {
             <div className="hidden md:flex flex-col flex-1 pointer-events-none ">
               <SpeechBubble
                 className={
-                  cn("w-9/12", 'animate-hovering')} 
-                text={"Speech bubble 1"}/>
-              <SpeechBubble
-                className={
-                  cn("mt-10 w-9/12 self-end", "animate-hovering")}
-                text={"Speech bubble 2 - Lorem ipsum delta"}
-                isReply/>
+                  cn("w-9/12 self-end", 'animate-hovering')} 
+                text={"Hey there! I just watched this fascinating YouTube video about quantum computing. Can you tell me more about it?"}/>
               <SpeechBubble
                 className={
                   cn("mt-10 w-9/12", "animate-hovering")}
-                text={"Speech bubble 3"}/>
+                text={"Of course! Quantum computing is a field that utilizes the principles of quantum mechanics to perform operations on data."}
+                isReply/>
+              <SpeechBubble
+                className={
+                  cn("mt-10 w-9/12 self-end", "animate-hovering")}
+                text={"Wow, that sounds mind-blowing! But how exactly does it differ from traditional computing?"}/>
               <SpeechBubble 
-                className={cn("mt-10 w-9/12 self-end", "animate-hovering")}
-                text={"Speech bubble 4 - Lorem ipsum delta"}
+                className={cn("mt-10 w-9/12", "animate-hovering")}
+                text={"In traditional computing, bits can only exist in one state at a time, either 0 or 1. However, qubits can exist in a superposition of both states simultaneously, exponentially increasing the computational power of quantum computers."}
                 isReply/>
             </div>
           </div>
