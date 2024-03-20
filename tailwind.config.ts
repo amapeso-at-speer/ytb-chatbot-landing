@@ -64,13 +64,13 @@ module.exports = {
         },
         hover: {
           "0%": {
-            transform: "translateY(-5%)",
+            transform: "translateY(0)",
           },
           "50%": {
-            transform: "translateY(5%)",
+            transform: "translateY(6%)",
           },
           "100%": {
-            transform: "translateY(-5%)",
+            transform: "translateY(0)",
           },
         }
       },

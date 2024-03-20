@@ -40,7 +40,7 @@ export default function Home() {
               </p> */}
               <div className="mr-0 md:mr-10 flex flex-col flex-1">
                 <h1 className="text-center md:text-left text-3xl md:text-4xl lg:text-7xl font-bold">Elaborate</h1>
-                <p className="text-center md:text-left text-xl md:text-2xl lg:text-3xl">your curiosity</p>
+                <p className="text-center md:text-left text-xl md:text-2xl lg:text-3xl">on your curiosity</p>
                 <p className="text-center md:text-left text-xl md:text-3xl lg:text-4xl pt-10 text-zinc-400">dive deep with our AI chat on YouTube videos</p>
                 <button className="self-center md:self-start bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1">Request beta access</button>
                 <button className="md:hidden mt-3 opacity-70 transition duration-300 text-white hover:opacity-100">Sign In</button>
@@ -55,19 +55,19 @@ export default function Home() {
                     cn("mt-10 w-9/12", "animate-hovering")}
                   text={"Of course! Quantum computing is a field that utilizes the principles of quantum mechanics to perform operations on data."}
                   isReply
-                  delay={4500}
+                  delay={400}
                 />
                 <SpeechBubble
                   className={
                     cn("mt-10 w-9/12 self-end", "animate-hovering")}
                   text={"Wow, that sounds mind-blowing! But how exactly does it differ from traditional computing?"}
-                  delay={4500 + 5000}
+                  delay={400 + 300}
                 />
                 <SpeechBubble 
                   className={cn("mt-10 w-9/12", "animate-hovering")}
                   text={"In traditional computing, bits can only exist in one state at a time, either 0 or 1. However, qubits can exist in a superposition of both states simultaneously, exponentially increasing the computational power of quantum computers."}
                   isReply
-                  delay={4500 + 5000 + 3500}
+                  delay={400 + 300 + 100}
                 />
               </div>
             </div>

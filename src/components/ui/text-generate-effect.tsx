@@ -24,8 +24,8 @@ export const TextGenerateEffect = ({
           opacity: 1,
         },
         {
-          duration: 2,
-          delay: stagger(0.2),
+          duration: 0.35,
+          delay: stagger(0.02),
         }
       );
     }, delay ?? 0);
