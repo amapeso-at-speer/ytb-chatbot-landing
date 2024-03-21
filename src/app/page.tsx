@@ -12,6 +12,7 @@ import SpeechBubble from "@/components/ui/speech-bubble/speech-bubble";
 import { cn } from "@/utils/cn";
 import Card from "@/components/ui/card";
 import "./page.css";
+import Link from "next/link";
 
 export default function Home() {
 
@@ -41,8 +42,12 @@ export default function Home() {
                 <h1 className="text-center md:text-left text-3xl md:text-4xl lg:text-7xl font-bold">Elaborate</h1>
                 <p className="text-center md:text-left text-xl md:text-2xl lg:text-3xl">on your curiosity</p>
                 <p className="text-center md:text-left text-xl md:text-3xl lg:text-4xl pt-10 text-zinc-400">dive deep with our AI chat on YouTube videos</p>
-                <button className="self-center md:self-start bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1">Request beta access</button>
-                <button className="md:hidden mt-3 opacity-70 transition duration-300 text-white hover:opacity-100">Sign In</button>
+                <Link
+                  href="/access-form"
+                  className="self-center md:self-start bg-white/10 py-3 px-6 mt-10 rounded-full font-bold outline outline-1 transition-all hover:bg-white hover:text-light-blue">
+                  Request beta access
+                </Link>
+                {/* <button className="md:hidden mt-3 opacity-70 transition duration-300 text-white hover:opacity-100">Sign In</button> */}
               </div>
               <div className="hidden md:flex flex-col flex-1 mb-20">
                 <SpeechBubble

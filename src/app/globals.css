@@ -38,6 +38,11 @@ body {
   margin-right: 0.75rem;
 }
 
+.speer-icon {
+  width: 100px;
+  height: 100px;
+}
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
