@@ -29,7 +29,7 @@ export default function RootLayout({
             <FaSquareXTwitter className="footer-icon" />
           </div>
         </footer> */}
-        <footer className="flex justify-between pb-10 w-full max-w-screen-xl">
+        <footer className="flex justify-between mt-10 px-5 pb-10 w-full max-w-screen-xl">
           <div className="flex flex-col">
             <div className="flex items-center text-light-blue">
               <div className="speer-icon mr-10">
