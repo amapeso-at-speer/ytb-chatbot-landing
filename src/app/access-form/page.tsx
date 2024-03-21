@@ -16,7 +16,8 @@ export default function AccessForm() {
     const data = entries.reduce((prev, entry) => {
       return {
         ...prev,
-        [entry[0]]: entry[1]
+        [entry[0]]: entry[1],
+        "time_received": new Date().toString(),
       };
     }, {});
 
