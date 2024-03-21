@@ -29,7 +29,6 @@ export default function Home() {
 
   return (
     <>
-    <main className="flex flex-col items-center">
       <BackgroundGradientAnimation className="min-h-screen flex">
         <div className="flex flex-col flex-1 z-50">
           <NavBar/>
@@ -97,14 +96,6 @@ export default function Home() {
           <p className="text-white/50">Engage in conversational interactions, ask follow-up questions, and explore further insights effortlessly.</p>
         </Card>
       </section>
-      <footer className="flex align-center justify-between px-5 pb-5 mb-5 w-full max-w-screen-xl">
-        <p className="footer-heading font-bold text-xl">Elaborate</p>
-        <div className="flex">
-          <FaGithub className="footer-icon" />
-          <FaSquareXTwitter className="footer-icon" />
-        </div>
-      </footer>
-    </main>
     </>
   );
 }

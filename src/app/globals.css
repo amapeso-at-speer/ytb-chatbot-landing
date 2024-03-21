@@ -29,7 +29,14 @@ body {
     background-color: rgb(25, 35, 77)
 }
 
+.footer-icon {
+  height: 24px;
+  width: 24px;
+}
 
+.footer-icon:first-child {
+  margin-right: 0.75rem;
+}
 
 @layer utilities {
   .text-balance {

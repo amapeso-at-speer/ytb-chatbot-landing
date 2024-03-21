@@ -27,6 +27,7 @@ module.exports = {
         fourth: "moveHorizontal 90s ease infinite",
         fifth: "moveInCircle 60s ease infinite",
         hovering: "hover 3s ease-in-out infinite",
+        loading: "moveInCircle 1s linear infinite",
       },
       keyframes: {
         moveHorizontal: {
