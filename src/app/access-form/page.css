@@ -6,3 +6,67 @@
 .loading-icon-wrapper {
   transform: translateX(-50%);
 }
+
+.PhoneInput {
+  display: flex;
+  align-items: center;
+}
+
+.PhoneInputCountry {
+  position: relative;
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+}
+
+.PhoneInputCountrySelect {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  border: 0;
+  opacity: 0;
+  cursor: pointer;
+
+  background-color: rgb(25, 35, 77);
+}
+
+.PhoneInputCountrySelect option {
+  padding: 0.5rem;
+}
+
+.PhoneInputCountryIcon {
+  width: 1.5rem;
+  height: 1.5rem;
+  display: flex;
+  align-items: center;
+}
+
+.PhoneInputCountrySelectArrow {
+  width: 0.5rem;
+  height: 0.5rem;
+  display: block;
+  content: ''; 
+  border-style: solid;
+  border-color: currentColor;
+  border-top-width: 0;
+  border-bottom-width: 1px;
+  border-left-width: 0;
+  border-right-width: 1px;
+  transform: rotate(45deg);
+  margin: 0.5rem;
+}
+
+.PhoneInputInput {
+  padding: 0.5rem;
+  flex-grow: 1;
+  background-color: transparent;
+}
+
+.PhoneInputInput::placeholder {
+  color: #6366f1;
+  opacity: 0.7;
+}

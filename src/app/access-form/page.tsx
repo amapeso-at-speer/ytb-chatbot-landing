@@ -1,25 +1,61 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import NavBar from "@/components/ui/navbar";
 import Card from "@/components/ui/card";
 import "./page.css";
-import Input from "@/components/ui/input";
+import FormInput from "@/components/ui/input";
 import { LitUpBorderButton } from "@/components/ui/lit-up-border-button";
 import { AiOutlineLoading } from "react-icons/ai";
+import { FieldValues, useForm } from "react-hook-form";
+import PhoneInput, { isValidPhoneNumber } from "react-phone-number-input";
 
 export default function AccessForm() {
+  const {
+    handleSubmit,
+    formState: { errors },
+    control
+  } = useForm({
+    mode: "onSubmit",
+    reValidateMode: "onSubmit",
+    criteriaMode: "all"
+  });
+
   const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
   const [loading, setLoading] = useState(false);
 
-  const submitForm = (formData: FormData) => {
-    const entries = Array.from(formData.entries());
-    const data = entries.reduce((prev, entry) => {
-      return {
-        ...prev,
-        [entry[0]]: entry[1],
-        "time_received": new Date().toString(),
-      };
-    }, {});
+  const validateName = (name: string) => {
+    if (name.trim().length === 0) {
+      return "Please enter your full name";
+    }
+
+    return true;
+  }
+
+  const validateEmail = (email: string) => {
+    if (email.trim().length === 0) {
+      return "Please enter your email";
+    }
+
+    return true;
+  }
+
+  const validatePhoneNumber = (phoneNumber: string) => {
+    if (!phoneNumber) {
+      return true;
+    }
+
+    if (!isValidPhoneNumber(phoneNumber)) {
+      return "Please enter a valid phone number";
+    }
+
+    return true;
+  }
+
+  const submitForm = (formData: FieldValues) => {
+    const data = {
+      ...formData,
+      "time_received": new Date().toString(),
+    };
 
     setLoading(true);
     setIsSuccess(null);
@@ -45,28 +81,53 @@ export default function AccessForm() {
           <Card className="pb-10">
             <h1 className="mt-3 font-bold text-2xl text-light-blue">Request beta access</h1>
             <p className="text-lg">Sign up now to request beta access and be among the first to experience our cutting-edge AI chatbot for YouTube video insights.</p>
-            <form className="flex flex-col mt-10" id="request-access-form" action={submitForm}>
-              <Input
-                required
-                className="mb-3"
+            <form className="flex flex-col mt-10" id="request-access-form" onSubmit={handleSubmit(submitForm)}>
+              <FormInput
+                control={control}
+                errors={errors}
+                className="mb-5"
                 name="full_name"
-                label="Full Name"
+                labelText="Full Name"
                 placeholder="ex. John Doe"
+                rules={{
+                  required: true,
+                  validate: validateName,
+                }}
               />
-              <Input
-                required
-                className="mb-3"
+              <FormInput
+                control={control}
+                errors={errors}
+                className="mb-5"
                 name="email"
-                label="Email"
+                labelText="Email"
                 type="email"
                 placeholder="ex. johndoe@example.com"
+                rules={{
+                  required: true,
+                  validate: validateEmail,
+                }}
               />
-              <Input
+              <FormInput
+                control={control}
+                errors={errors}
                 className="mb-10 w-1/2"
                 name="phone"
-                label="Phone"
+                labelText="Phone"
                 type="tel"
-                placeholder="( ___ ) - ___ - ___"
+                rules={{
+                  validate: validatePhoneNumber,
+                }}
+                render={({ field: { onChange, value } }) => (
+                  <PhoneInput
+                    className={"bg-light-blue/20 rounded-sm outline outline-1 outline-light-blue placeholder:text-light-blue/70 " +
+                      (errors?.phone ? "outline-red-500" : "")
+                    }
+                    placeholder="ex. (123) 456-7890"
+                    value={value}
+                    onChange={onChange}
+                    defaultCountry="US"
+                  />
+                )}
               />
               <LitUpBorderButton
                 className="self-center mb-3 mt-3"

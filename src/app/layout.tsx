@@ -35,7 +35,7 @@ export default function RootLayout({
             <div className="flex items-center text-light-blue">
               <a href="https://speer.io/" className="speer-icon mr-10 cursor-pointer" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="auto" viewBox="0 0 271 261.53">
-                  <path id="Path_2202" fill="currentColor" data-name="Path 2202" d="M211.783,132.586h30.686V249.664H363.506v29.915H218.6V393.116h-6.819V279.665H93.505v-7.344H211.864Z" transform="translate(-93.005 -132.086)" stroke="currentColor" stroke-width="1"/>
+                  <path id="Path_2202" fill="currentColor" data-name="Path 2202" d="M211.783,132.586h30.686V249.664H363.506v29.915H218.6V393.116h-6.819V279.665H93.505v-7.344H211.864Z" transform="translate(-93.005 -132.086)" stroke="currentColor" strokeWidth="1"/>
                 </svg>
               </a>
               <div className="text-white">
