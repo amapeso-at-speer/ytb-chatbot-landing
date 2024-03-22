@@ -27,7 +27,7 @@ export default function Input({
           name={name}
           placeholder={placeholder}
           type={type}
-          required={required}  
+          required={required}
         />
       </div>
     </>
