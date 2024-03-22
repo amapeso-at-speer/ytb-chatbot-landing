@@ -1,6 +1,5 @@
 .cards {
-  position: relative;
-  transform: translateY(-25%);
+  padding-top: 3rem;
 }
 
 .card-icon {
