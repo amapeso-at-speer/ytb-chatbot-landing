@@ -129,7 +129,7 @@ export default function AccessForm() {
                   />
                 )}
               />
-              <LitUpBorderButton
+              {!isSuccess && <LitUpBorderButton
                 className="self-center mb-3 mt-3"
                 isFormButton={true}
                 disabled={loading}
@@ -140,13 +140,15 @@ export default function AccessForm() {
                     <AiOutlineLoading className="animate-loading loading-icon"/>
                   </div>}
                 </div>
-              </LitUpBorderButton>
+              </LitUpBorderButton>}
               {
                 isSuccess != null &&
                 (
                   <p className="self-center">
                     { 
-                      isSuccess ? "We received your request!" : "Something went wrong. Please try your request again!"
+                      isSuccess ?
+                        <span className="text-lg block my-3">Thank you! We've received your request.</span> :
+                        "Something went wrong. Please try your request again!"
                     }
                   </p>
                 )
