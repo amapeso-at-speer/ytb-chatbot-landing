@@ -12,6 +12,7 @@ import SpeechBubble from "@/components/ui/speech-bubble/speech-bubble";
 import { cn } from "@/utils/cn";
 import Card from "@/components/ui/card";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -63,21 +64,39 @@ export default function Home() {
         <section className="cards flex flex-col md:flex-row justify-between p-5 pb-20 w-full max-w-screen-xl z-[100]">
           <Card className="mr-0 mb-10 md:mr-10 md:mb-0">
             <div className="flex align-center mb-3">
-              <HiOutlineLightBulb className="card-icon"/>
+              <Image
+                className="card-icon"
+                width={30}
+                height={30}
+                src="/images/globe.svg"
+                alt="Globe Icon"
+              />
               <h2 className="font-bold text-xl">Instant Video Insights</h2>
             </div>
             <p className="text-white/50">Get quick and accurate summaries of YouTube videos on various topics.</p>
           </Card>
           <Card className="mr-0 mb-10 md:mr-10 md:mb-0">
             <div className="flex align-center mb-3">
-              <HiOutlineDocumentSearch className="card-icon"/>
+            <Image
+                className="card-icon"
+                width={30}
+                height={30}
+                src="/images/bar-chart-big.svg"
+                alt="Bar Chart Icon"
+              />
               <h2 className="font-bold text-xl">Video Analysis</h2>
             </div>
             <p className="text-white/50">Receive detailed analyses and breakdowns of video content, including themes, trends, and important points.</p>
           </Card>
           <Card>
             <div className="flex align-center mb-3">
-              <BiConversation className="card-icon"/>
+            <Image
+                className="card-icon"
+                width={30}
+                height={30}
+                src="/images/messages-square.svg"
+                alt="Speech Bubble Icon"
+              />
               <h2 className="font-bold text-xl">Interactive Experience</h2>
             </div>
             <p className="text-white/50">Engage in conversational interactions, ask follow-up questions, and explore further insights effortlessly.</p>

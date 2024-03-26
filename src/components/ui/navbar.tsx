@@ -13,7 +13,7 @@ export default function NavBar() {
         <Link className="flex" href="/">
           <Image
             className="mr-2"
-            src="/elaborate_logo.svg"
+            src="/images/elaborate_logo.svg"
             width={30}
             height={30}
             alt="Elaborate Logo"
