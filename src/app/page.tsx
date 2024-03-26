@@ -27,7 +27,7 @@ export default function Home() {
               <h1 className="text-center md:text-left text-3xl md:text-4xl lg:text-7xl font-bold">Elaborate on <br/>Your Curiosity</h1>
               <p className="text-center md:text-left text-xl md:text-2xl lg:text-4xl pt-10 text-zinc-400">Dive deep on YouTube videos with our Ai chat.</p>
               <LitUpBorderButton className="self-center md:self-start mt-9">
-                <Link className="px-4 py-2 block text-base md:text-lg lg:text-2xl" href="/access-form">
+                <Link className="px-5 py-3 block text-base md:text-lg" href="/access-form">
                   Request Beta Access
                 </Link>
               </LitUpBorderButton>

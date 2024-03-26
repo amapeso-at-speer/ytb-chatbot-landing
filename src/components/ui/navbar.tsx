@@ -27,7 +27,7 @@ export default function NavBar() {
             pathname !== "/access-form" &&
               <LitUpBorderButton>
                 <Link className="px-4 py-2 block" href="/access-form">
-                  Request beta access
+                  Request Beta Access
                 </Link>
               </LitUpBorderButton>
           }
