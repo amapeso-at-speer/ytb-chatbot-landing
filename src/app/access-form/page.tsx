@@ -78,9 +78,9 @@ export default function AccessForm() {
       <NavBar/>
       <section className="flex flex-1 items-center justify-center">
         <div className="px-5 w-full max-w-screen-md">
-          <Card className="pb-10">
-            <h1 className="mt-3 font-bold text-2xl text-light-blue">Request beta access</h1>
-            <p className="text-lg">Sign up now to request beta access and be among the first to experience our cutting-edge AI chatbot for YouTube video insights.</p>
+          <Card className="p-8 pb-10">
+            <h1 className="mt-3 font-bold text-2xl">Request beta access</h1>
+            <p className="text-lg text-white/70">Sign up now to request beta access and be among the first to experience our cutting-edge AI chatbot for YouTube video insights.</p>
             <form className="flex flex-col mt-10" id="request-access-form" onSubmit={handleSubmit(submitForm)}>
               <FormInput
                 control={control}
@@ -147,7 +147,7 @@ export default function AccessForm() {
                   <p className="self-center">
                     { 
                       isSuccess ?
-                        <span className="text-lg block my-3">Thank you! We've received your request.</span> :
+                        <span className="text-lg block my-3">Thank you! We have received your request.</span> :
                         "Something went wrong. Please try your request again!"
                     }
                   </p>

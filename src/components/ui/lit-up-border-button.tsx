@@ -16,7 +16,7 @@ export const LitUpBorderButton: React.FC<Props> = ({
 }) => {
   return (
     <button disabled={disabled} className={"p-[3px] relative " + className} type={isFormButton ? "submit" : "button"} onClick={onClick}>
-      <div className="absolute inset-0 bg-gradient-to-r from-indigo-500 to-purple-500 rounded-full"/>
+      <div className="absolute inset-0 bg-gradient-to-r from-light-blue to-light-purple rounded-full"/>
       <div
         className={
           "button-color rounded-full relative group transition duration-200 text-white font-sans lg:text-base md:text-sm text-xs " +

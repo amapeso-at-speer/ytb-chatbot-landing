@@ -5,10 +5,10 @@ import { useEffect, useRef, useState } from "react";
 export const BackgroundGradientAnimation = ({
   gradientBackgroundStart = "rgb(6, 6, 15)",
   gradientBackgroundEnd = "rgb(25, 35, 77)",
-  firstColor = "145, 145, 233",
-  secondColor = "145, 145, 233",
-  thirdColor = "255, 231, 173",
-  fourthColor = "254, 217, 183",
+  firstColor = "253, 235, 208",
+  secondColor = "234, 196, 252",
+  thirdColor = "172, 165, 255",
+  fourthColor = "134, 117, 245",
   fifthColor = "145, 145, 233",
   pointerColor = "140, 100, 255",
   size = "80%",
@@ -124,7 +124,7 @@ export const BackgroundGradientAnimation = ({
             `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
             `[transform-origin:center_center]`,
             `animate-first`,
-            `opacity-90`
+            `opacity-60`
           )}
         ></div>
         <div
@@ -142,7 +142,7 @@ export const BackgroundGradientAnimation = ({
             `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
             `[transform-origin:calc(50%+400px)]`,
             `animate-third`,
-            `opacity-70`
+            `opacity-60`
           )}
         ></div>
         <div
@@ -151,7 +151,7 @@ export const BackgroundGradientAnimation = ({
             `[mix-blend-mode:var(--blending-value)] w-[var(--size)] h-[var(--size)] top-[calc(50%-var(--size)/2)] left-[calc(50%-var(--size)/2)]`,
             `[transform-origin:calc(50%-200px)]`,
             `animate-fourth`,
-            `opacity-70`
+            `opacity-60`
           )}
         ></div>
         <div
@@ -171,7 +171,7 @@ export const BackgroundGradientAnimation = ({
             className={cn(
               `absolute [background:radial-gradient(circle_at_center,_rgba(var(--pointer-color),_0.8)_0,_rgba(var(--pointer-color),_0)_50%)_no-repeat]`,
               `[mix-blend-mode:var(--blending-value)] w-full h-full -top-1/2 -left-1/2`,
-              `opacity-70`
+              `opacity-60`
             )}
           ></div>
         )}

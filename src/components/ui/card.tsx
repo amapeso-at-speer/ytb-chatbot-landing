@@ -8,7 +8,7 @@ export default function Card({
   className?: string;
 }) {
   return (
-    <div className={"flex-1 backdrop-blur-sm bg-dark-blue/20 p-5 rounded-md outline outline-1 outline-light-blue " + className}>
+    <div className={"card flex-1 backdrop-blur-sm bg-dark-blue/20 p-5 rounded-md relative " + className}>
       {children}
     </div>
   );

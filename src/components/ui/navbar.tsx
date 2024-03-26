@@ -2,25 +2,27 @@ import React from "react";
 import {LitUpBorderButton} from "@/components/ui/lit-up-border-button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import ElaborateLogo from "../../../public/elaborate_logo.svg";
+import Image from "next/image";
 
 export default function NavBar() {
   const pathname = usePathname();
 
   return (
-      <nav className="flex p-6 justify-between items-center">
-        <Link href="/">
+      <nav className="flex w-full p-6 justify-between items-center">
+        <Link className="flex" href="/">
+          <Image
+            className="mr-2"
+            src="/elaborate_logo.svg"
+            width={30}
+            height={30}
+            alt="Elaborate Logo"
+          />
           <h1 className="font-sans font-bold text-white text-2xl">
               Elaborate
           </h1>
         </Link>
-        <div className="md:flex pb-2 items-center hidden">
-          <button className="p-[3px] md:pr-5 pr-2" >
-            {/* <div
-              className="px-4 py-2  bg-transparent rounded-full  relative group transition duration-200 text-white hover:opacity-30 font-sans lg:text-base md:text-sm text-xs"
-            >
-              Sign In
-            </div> */}
-          </button>
+        <div className="md:flex items-center hidden">
           {
             pathname !== "/access-form" &&
               <LitUpBorderButton>

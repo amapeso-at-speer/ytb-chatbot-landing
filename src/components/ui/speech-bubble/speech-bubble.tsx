@@ -25,7 +25,7 @@ export default function SpeechBubble({
       <div className={"absolute speech-icon-wrapper " + (isReply ? "robo" : "person")}>
         {isReply ? <RiRobot2Line className="speech-icon" /> : <IoPersonOutline className="speech-icon" />}
       </div>
-      <TextGenerateEffect delay={delay} words={text} />
+      <TextGenerateEffect textClassName="text-sm lg:text-base" delay={delay} words={text} />
     </div>
   );
 }

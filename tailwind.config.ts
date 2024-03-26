@@ -14,7 +14,8 @@ module.exports = {
       ...colors,
       'dark-blue': 'rgb(6, 6, 15)',
       'blue': 'rgb(25, 35, 77)',
-      'light-blue': '#6366f1',
+      'light-blue': '#3D65F6',
+      'light-purple': '#C4A1F0'
     },
     extend: {
       zIndex: {
