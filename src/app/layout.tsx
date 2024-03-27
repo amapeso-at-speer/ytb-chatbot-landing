@@ -36,7 +36,7 @@ export default function RootLayout({
             <span className="hidden lg:block mx-3">|</span>
             <a href="mailto:create@speer.io">create@speer.io</a>
           </div>
-          <div className="mx-5 text-light-blue">Copyrights © 2024 SPEER TECHNOLOGIES, INC.</div>
+          <div className="mx-5 text-light-blue">Copyright © 2024 Speer Technologies Inc. All Rights Reserved.</div>
           <div className="flex flex-col lg:flex-row text-right">
             <a href="https://www.linkedin.com/company/reframethefuture" target="_blank" rel="noopener noreferrer">LinkedIn</a>
             <span className="hidden lg:block mx-3">|</span>
