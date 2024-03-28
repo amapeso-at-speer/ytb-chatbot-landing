@@ -25,7 +25,7 @@ export default function Home() {
               Gradients X Animations
             </p> */}
             <div className="mr-0 md:mr-10 lg:mr-28 flex flex-col flex-1">
-              <h1 className="text-center md:text-left text-3xl md:text-4xl lg:text-7xl font-bold">Explain inLayman</h1>
+              <h1 className="text-center md:text-left text-3xl md:text-4xl lg:text-7xl font-bold">Elaborate on your curiosity</h1>
               <p className="text-center md:text-left text-xl md:text-2xl lg:text-4xl pt-10 text-zinc-400">Chat with your podcast, audiobooks and YouTube videos.</p>
               <LitUpBorderButton className="self-center md:self-start mt-9">
                 <Link className="px-5 py-3 block text-base md:text-lg" href="/access-form">
