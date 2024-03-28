@@ -16,10 +16,10 @@ export default function NavBar() {
             src="/images/elaborate_logo.svg"
             width={30}
             height={30}
-            alt="Elaborate Logo"
+            alt="Layman Logo"
           />
           <h1 className="font-sans font-bold text-white text-2xl">
-              Elaborate
+              Layman
           </h1>
         </Link>
         <div className="md:flex items-center hidden">

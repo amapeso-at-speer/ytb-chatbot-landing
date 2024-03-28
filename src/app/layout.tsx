@@ -8,7 +8,7 @@ import Link from "next/link";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Elabor.AI.te",
+  title: "Layman",
   description: "Talk to your videos!",
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
           {children}
         </main>
         {/* <footer className="flex align-center justify-between px-5 pb-5 mb-5 w-full max-w-screen-xl">
-          <p className="footer-heading font-bold text-xl">Elaborate</p>
+          <p className="footer-heading font-bold text-xl">Layman</p>
           <div className="flex">
             <FaGithub className="footer-icon" />
             <FaSquareXTwitter className="footer-icon" />
