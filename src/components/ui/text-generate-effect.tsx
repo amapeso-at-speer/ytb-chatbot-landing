@@ -16,18 +16,22 @@ export const TextGenerateEffect = ({
 }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words.split(" ");
+  
   useEffect(() => {
     setTimeout(() => {
-      animate(
-        "span",
-        {
-          opacity: 1,
-        },
-        {
-          duration: 0.35,
-          delay: stagger(0.02),
-        }
-      );
+        if (scope.current &&
+          scope.current.children.length === wordsArray.length) {
+        animate(
+          "span",
+          {
+            opacity: 1,
+          },
+          {
+            duration: 0.35,
+            delay: stagger(0.02),
+          }
+        );
+      }
     }, delay ?? 0);
   }, [scope.current]);
 
@@ -38,7 +42,7 @@ export const TextGenerateEffect = ({
           return (
             <motion.span
               key={word + idx}
-              className={cn(textClassName, "opacity-0")}
+              className={cn('text-ellipsis-span', textClassName, "opacity-0")}
             >
               {word}{" "}
             </motion.span>

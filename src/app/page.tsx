@@ -1,10 +1,4 @@
-"use client";
-import { useScroll, useTransform } from "framer-motion";
-import React, {useRef} from "react";
-import { HiOutlineLightBulb, HiOutlineDocumentSearch  } from "react-icons/hi";
-import { FaGithub, FaSquareXTwitter } from "react-icons/fa6";
-import { BiConversation } from "react-icons/bi";
-import {GoogleGeminiEffect} from "@/components/ui/google-gemini-effect";
+import React from "react";
 import NavBar from "@/components/ui/navbar";
 import { BackgroundGradientAnimation } from "../components/ui/background-gradient-animation";
 import {LitUpBorderButton} from "@/components/ui/lit-up-border-button";
@@ -21,9 +15,6 @@ export default function Home() {
         <NavBar/>
         <div className="inset-0 flex flex-1 items-center justify-center p-5">
           <div className="flex flex-col md:flex-row text-white px-4 max-w-screen-xl items-center">
-            {/* <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20">
-              Gradients X Animations
-            </p> */}
             <div className="mr-0 md:mr-10 lg:mr-28 flex flex-col flex-1">
               <h1 className="text-center md:text-left text-3xl md:text-4xl lg:text-7xl font-bold">Elaborate on your curiosity</h1>
               <p className="text-center md:text-left text-xl md:text-2xl lg:text-4xl pt-10 text-zinc-400">Chat with your podcast, audiobooks and YouTube videos.</p>
@@ -32,7 +23,6 @@ export default function Home() {
                   Request Beta Access
                 </Link>
               </LitUpBorderButton>
-              {/* <button className="md:hidden mt-3 opacity-70 transition duration-300 text-white hover:opacity-100">Sign In</button> */}
             </div>
             <div className="hidden md:flex flex-col flex-1 mb-20">
               <SpeechBubble

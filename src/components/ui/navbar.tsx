@@ -1,9 +1,9 @@
+"use client";
 import React from "react";
-import {LitUpBorderButton} from "@/components/ui/lit-up-border-button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import ElaborateLogo from "../../../public/elaborate_logo.svg";
 import Image from "next/image";
+import {LitUpBorderButton} from "@/components/ui/lit-up-border-button";
 
 export default function NavBar() {
   const pathname = usePathname();
